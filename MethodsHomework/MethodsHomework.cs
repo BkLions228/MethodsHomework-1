@@ -2,7 +2,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace MethodsHomework
+namespace MethodsHomework // John Beach's MethodsHomework submission
 {
     [TestClass]
     public class MethodsHomework
