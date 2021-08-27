@@ -92,73 +92,77 @@ namespace MethodsHomework
             int[] arraySwapped = YourAnswers.SwapFirstValueWithLastValue(array3);
             Grading.SwapFirstValueWithLastValue(arraySwapped);
         }
-    
-        
-    
-
-        //[TestMethod]
-        //public void UsingMethods()
-        //{
-        //    //READ ME
-        //    // This test "UsingMethods" is all about discovering Methods on types you already know about.
-        //    // This will help you learn to read Method contracts and use them appropriately.
-        //    // This WILL require research of the types you are being asked about. You have not
-        //    // seen many of them in class. Its important to be able to research a method youve not
-        //    // seen before but need to use.
-        //    // In this section you are allowed to touch the code, but, ONLY the methods.
-        //    List<int> ages = new List<int> { 15, 27, 43, 12, 19, 51 };
-
-        //    // Find a method to reverse this list of ages.
-        //    // hint, uses the dot operatore on ages. like ages.SomeMethod()
-        //    // use method here
-        //    Grading.ListIsReversed(ages);
-
-        //    // find a method to add a value to the list ages at the end.
-        //    int addMeIntoList = 12;
-        //    // use method here
-        //    Grading.TwelveWasAdded(ages);
-
-        //    // find a method to add a value to the list at the front of the list ages, ie, the start of it, or first value.
-        //    int addMeToTheListAtTheVeryFront = 1;
-        //    // use method here
-        //    Grading.OneWasAddedToTheFront(ages);
-
-        //    // find a method to clear the list ages.
-        //    // use method here
-        //    Grading.AgesIsNowEmpty(ages);
-
-        //    // find a method to check if the double amount is negative.
-        //    double amount = 29.3;
-        //    // you must capture the result of the found method;
-        //    bool isNegative = // use method here
-        //    Grading.AmountIsNotNegative(isNegative);
-
-        //    // Find a method to tell you if the sentence contains the work fox
-        //    string sentence = "The quick brown fox.";
-        //    // you must capture the result of the found method;
-        //    bool doesContaintFox = // use method here
-        //    Grading.ContainsFox(doesContaintFox);
-
-        //    // Find a method to replace the word quick, with the word slow
-        //    // you must capture the result of the found method;
-        //    string newSentence = // use method here
-        //    Grading.ReplacedTheWord(newSentence);
-
-        //    // Find a method to Convert this word to lowercase;
-        //    string word = "UPPER";
-        //    // you must capture the result of the found method;
-        //    string lowered = // use method here
-        //    Grading.StringWasLowercased(lowered);
-
-        //    // Find a method to Convert this word to lowercase;
-        //    string needsSplit = "I,Need,These,Seperate";
-        //    // you must capture the result of the found method;
-        //    string[] split = // use method here
-        //    Grading.StringWasSplit(split);
 
 
-        //    // I hope by now you see the power of what the types already do for you.
-        //}
+
+
+        [TestMethod]
+        public void UsingMethods()
+        {
+            //READ ME
+            // This test "UsingMethods" is all about discovering Methods on types you already know about.
+            // This will help you learn to read Method contracts and use them appropriately.
+            // This WILL require research of the types you are being asked about. You have not
+            // seen many of them in class. Its important to be able to research a method youve not
+            // seen before but need to use.
+            // In this section you are allowed to touch the code, but, ONLY the methods.
+            List<int> ages = new List<int> { 15, 27, 43, 12, 19, 51 };
+
+            // Find a method to reverse this list of ages.
+            // hint, uses the dot operatore on ages. like ages.SomeMethod()
+            // use method here
+            ages.Reverse();
+            Grading.ListIsReversed(ages);
+
+            // find a method to add a value to the list ages at the end.
+            int addMeIntoList = 12;
+            // use method here
+            ages.Add(addMeIntoList);
+            Grading.TwelveWasAdded(ages);
+
+            // find a method to add a value to the list at the front of the list ages, ie, the start of it, or first value.
+            int addMeToTheListAtTheVeryFront = 1;
+            // use method here
+            ages.Insert(0, addMeToTheListAtTheVeryFront); //The real answer
+            Grading.OneWasAddedToTheFront(ages);
+
+            // find a method to clear the list ages.
+            // use method here
+            ages.Clear();
+            Grading.AgesIsNowEmpty(ages);
+
+            // find a method to check if the double amount is negative.
+            double amount = 29.3;
+            // you must capture the result of the found method;
+            bool isNegative = double.IsNegative(amount); // use method here
+            Grading.AmountIsNotNegative(isNegative);
+
+            // Find a method to tell you if the sentence contains the work fox
+            string sentence = "The quick brown fox.";
+            // you must capture the result of the found method;
+            bool doesContaintFox = sentence.Contains("fox");// use method here
+            Grading.ContainsFox(doesContaintFox);
+
+            // Find a method to replace the word quick, with the word slow
+            // you must capture the result of the found method;
+            string newSentence = sentence.Replace("quick", "slow");// use method here
+            Grading.ReplacedTheWord(newSentence);
+
+            // Find a method to Convert this word to lowercase;
+            string word = "UPPER";
+            // you must capture the result of the found method;
+            string lowered = word.ToLower();// use method here
+            Grading.StringWasLowercased(lowered);
+
+            // Find a method to Convert this word to lowercase;
+            string needsSplit = "I,Need,These,Seperate";
+            // you must capture the result of the found method;
+            string[] split = needsSplit.Split(',');// use method here
+            Grading.StringWasSplit(split);
+
+
+            // I hope by now you see the power of what the types already do for you.
+        }
     }
 
     public class YourAnswers
@@ -180,10 +184,12 @@ namespace MethodsHomework
         }
         public static int IncrementMe(int valueToBeIncremented)
         {
-            return valueToBeIncremented++;
+            valueToBeIncremented += 1;
+            return valueToBeIncremented ;
         }
         public static int DecrementMe(int valueToBeDecremented)
         {
+            valueToBeDecremented -= 1;
             return valueToBeDecremented--;
         }
         public static int CastDoubleToInt(double valueToBeCasted)
@@ -212,9 +218,16 @@ namespace MethodsHomework
             return int.MaxValue;
         }
 
-        public static bool CheckIfIAmTrue(bool false)
+        public static bool CheckIfIAmTrue(bool value)
         {
-            return false;
+            if(value == true)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public static bool ReturnTrueOnlyIfIamBothPositiveAndEven(int positiveAndEven)
@@ -235,6 +248,7 @@ namespace MethodsHomework
             while (i < array.Length)
             {
                 sum += array[i];
+                i++;
             }
             return sum;
         }
@@ -253,22 +267,27 @@ namespace MethodsHomework
         public static bool CheckAllValuesAre3(int[] array4)
         {
             int i = 0;
+            bool arrayAll3 = false;
             while (i < array4.Count())
             {
                 if(array4[i] == 3)
                 {
-                    return true;
+                    i++;
+                    return arrayAll3 = true;
+                    
                 }else
                 {
-                    return false;
+                    i++;
+                    return arrayAll3 = false;
                 }
             }
+            return arrayAll3;
         }
 
         public static int[] SwapFirstValueWithLastValue(int[] array3)
         {
             int temp = array3[0];
-            int lastValue = array3.Length;
+            int lastValue = array3.Length - 1;
             array3[0] = array3[lastValue];
             array3[lastValue] = temp;
             return array3;
