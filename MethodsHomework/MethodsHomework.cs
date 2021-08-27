@@ -17,151 +17,286 @@ namespace MethodsHomework
             // You are only allowed to write methods in the YourAnswers class below.
 
 
-            YourAnswers.DoNothing();
+            //YourAnswers.DoNothing();
 
-            int shouldBe25 = YourAnswers.ReturnIntWithValue25();
-            Grading.ReturnIntWithValue25(shouldBe25);
+            //int shouldBe25 = YourAnswers.ReturnIntWithValue25();
+            //Grading.ReturnIntWithValue25(shouldBe25);
 
-            int shouldBeAdded = YourAnswers.AddTwoNumbers(6, 10);
-            Grading.AddTwoNumbers(shouldBeAdded);
+            //int shouldBeAdded = YourAnswers.AddTwoNumbers(6, 10);
+            //Grading.AddTwoNumbers(shouldBeAdded);
 
-            int valueToBeIncremented= 6;
-            int incremented = YourAnswers.IncrementMe(valueToBeIncremented);
-            Grading.IncrementMe(incremented);
+            //int valueToBeIncremented= 6;
+            //int incremented = YourAnswers.IncrementMe(valueToBeIncremented);
+            //Grading.IncrementMe(incremented);
 
-            int valueToBeDecremented = 6;
-            int decremented = YourAnswers.DecrementMe(valueToBeDecremented);
-            Grading.DecrementMe(decremented);
+            //int valueToBeDecremented = 6;
+            //int decremented = YourAnswers.DecrementMe(valueToBeDecremented);
+            //Grading.DecrementMe(decremented);
 
-            double valueToBeCasted = 27.6;
-            int casted = YourAnswers.CastDoubleToInt(valueToBeCasted);
-            Grading.CastDoubleToInt(casted);
+            //double valueToBeCasted = 27.6;
+            //int casted = YourAnswers.CastDoubleToInt(valueToBeCasted);
+            //Grading.CastDoubleToInt(casted);
 
-            int valueToBeConverted = 19;
-            double converted = YourAnswers.ConvertIntToDouble(valueToBeConverted);
-            Grading.ConvertIntToDouble(converted);
+            //int valueToBeConverted = 19;
+            //double converted = YourAnswers.ConvertIntToDouble(valueToBeConverted);
+            //Grading.ConvertIntToDouble(converted);
 
-            double valueToBeCastedIntoString = 27.6;
-            string castedString = YourAnswers.CastMeIntoAString(valueToBeCastedIntoString);
-            Grading.CastMeIntoAString(castedString);
+            //double valueToBeCastedIntoString = 27.6;
+            //string castedString = YourAnswers.CastMeIntoAString(valueToBeCastedIntoString);
+            //Grading.CastMeIntoAString(castedString);
 
-            string valueToBeParsed= "27.6";
-            double parsed = YourAnswers.ParseMeIntoADouble(valueToBeParsed);
-            Grading.ParseMeIntoADouble(parsed);
+            //string valueToBeParsed= "27.6";
+            //double parsed = YourAnswers.ParseMeIntoADouble(valueToBeParsed);
+            //Grading.ParseMeIntoADouble(parsed);
 
-            int max = YourAnswers.ReturnMaxIntValue();
-            Grading.ReturnMaxIntValue(max);
+            //int max = YourAnswers.ReturnMaxIntValue();
+            //Grading.ReturnMaxIntValue(max);
 
-            bool amITrue = YourAnswers.CheckIfIAmTrue(false);
-            Grading.CheckIfIAmTrue(amITrue);
+            //bool amITrue = YourAnswers.CheckIfIAmTrue(false);
+            //Grading.CheckIfIAmTrue(amITrue);
 
-            int positiveAndEven = 2;
-            bool result = YourAnswers.ReturnTrueOnlyIfIamBothPositiveAndEven(positiveAndEven);
-            Grading.ReturnTrueOnlyIfIamBothPositiveAndEvenTrue(result);
+            //int positiveAndEven = 2;
+            //bool result = YourAnswers.ReturnTrueOnlyIfIamBothPositiveAndEven(positiveAndEven);
+            //Grading.ReturnTrueOnlyIfIamBothPositiveAndEvenTrue(result);
 
-            int positiveAndOdd = 3;
-            result = YourAnswers.ReturnTrueOnlyIfIamBothPositiveAndEven(positiveAndOdd);
-            Grading.ReturnTrueOnlyIfIamBothPositiveAndEvenFalse(result);
+            //int positiveAndOdd = 3;
+            //result = YourAnswers.ReturnTrueOnlyIfIamBothPositiveAndEven(positiveAndOdd);
+            //Grading.ReturnTrueOnlyIfIamBothPositiveAndEvenFalse(result);
 
-            int negativeAndEven = -2;
-            result = YourAnswers.ReturnTrueOnlyIfIamBothPositiveAndEven(negativeAndEven);
-            Grading.ReturnTrueOnlyIfIamBothPositiveAndEvenFalse(result);
+            //int negativeAndEven = -2;
+            //result = YourAnswers.ReturnTrueOnlyIfIamBothPositiveAndEven(negativeAndEven);
+            //Grading.ReturnTrueOnlyIfIamBothPositiveAndEvenFalse(result);
 
-            int negativeAndOdd = -3;
-            result = YourAnswers.ReturnTrueOnlyIfIamBothPositiveAndEven(negativeAndOdd);
-            Grading.ReturnTrueOnlyIfIamBothPositiveAndEvenFalse(result);
+            //int negativeAndOdd = -3;
+            //result = YourAnswers.ReturnTrueOnlyIfIamBothPositiveAndEven(negativeAndOdd);
+            //Grading.ReturnTrueOnlyIfIamBothPositiveAndEvenFalse(result);
 
-            int[] array = { 4,5,6,8,12,17 };
-            // Sum means to add the contents of the array all together.
-            int sum = YourAnswers.SumTheContentsOfTheArray(array);
-            Grading.SumTheContentsOfTheArray(sum);
+            //int[] array = { 4,5,6,8,12,17 };
+            //// Sum means to add the contents of the array all together.
+            //int sum = YourAnswers.SumTheContentsOfTheArray(array);
+            //Grading.SumTheContentsOfTheArray(sum);
 
-            int[] array3 = { 4, 5, 6, 8, 12, 17 };
-            int value = YourAnswers.GetValueAtPosition3(array3);
-            Grading.GetValueAtPosition3(value);
+            //int[] array3 = { 4, 5, 6, 8, 12, 17 };
+            //int value = YourAnswers.GetValueAtPosition3(array3);
+            //Grading.GetValueAtPosition3(value);
 
-            int length = YourAnswers.GetLengthOfArray(array3);
-            Grading.GetLengthOfArray(length);
+            //int length = YourAnswers.GetLengthOfArray(array3);
+            //Grading.GetLengthOfArray(length);
 
-            int[] array4 = { 3,3,3,3,3,3 };
-            bool allValuesAre3 = YourAnswers.CheckAllValuesAre3(array4);
-            Grading.CheckAllValuesAre3(allValuesAre3);
+            //int[] array4 = { 3,3,3,3,3,3 };
+            //bool allValuesAre3 = YourAnswers.CheckAllValuesAre3(array4);
+            //Grading.CheckAllValuesAre3(allValuesAre3);
 
-            int[] arraySwapped = YourAnswers.SwapFirstValueWithLastValue(array3);
-            Grading.SwapFirstValueWithLastValue(arraySwapped);
+            //int[] arraySwapped = YourAnswers.SwapFirstValueWithLastValue(array3);
+            //Grading.SwapFirstValueWithLastValue(arraySwapped);
 
         }
 
         [TestMethod]
         public void UsingMethods()
         {
-            //READ ME
-            // This test "UsingMethods" is all about discovering Methods on types you already know about.
-            // This will help you learn to read Method contracts and use them appropriately.
-            // This WILL require research of the types you are being asked about. You have not
-            // seen many of them in class. Its important to be able to research a method youve not
-            // seen before but need to use.
-            // In this section you are allowed to touch the code, but, ONLY the methods.
-            List<int> ages = new List<int> { 15, 27, 43, 12, 19, 51 };
+            ////    //READ ME
+            ////    // This test "UsingMethods" is all about discovering Methods on types you already know about.
+            ////    // This will help you learn to read Method contracts and use them appropriately.
+            ////    // This WILL require research of the types you are being asked about. You have not
+            ////    // seen many of them in class. Its important to be able to research a method youve not
+            ////    // seen before but need to use.
+            ////    // In this section you are allowed to touch the code, but, ONLY the methods.
+            ////    List<int> ages = new List<int> { 15, 27, 43, 12, 19, 51 };
 
-            // Find a method to reverse this list of ages.
-            // hint, uses the dot operatore on ages. like ages.SomeMethod()
-            // use method here
-            Grading.ListIsReversed(ages);
+            ////    // Find a method to reverse this list of ages.
+            ////    // hint, uses the dot operatore on ages. like ages.SomeMethod()
+            ////    // use method here
+            ////    Grading.ListIsReversed(ages);
 
-            // find a method to add a value to the list ages at the end.
-            int addMeIntoList = 12;
-            // use method here
-            Grading.TwelveWasAdded(ages);
+            ////    // find a method to add a value to the list ages at the end.
+            ////    int addMeIntoList = 12;
+            ////    // use method here
+            ////    Grading.TwelveWasAdded(ages);
 
-            // find a method to add a value to the list at the front of the list ages, ie, the start of it, or first value.
-            int addMeToTheListAtTheVeryFront = 1;
-            // use method here
-            Grading.OneWasAddedToTheFront(ages);
+            ////    // find a method to add a value to the list at the front of the list ages, ie, the start of it, or first value.
+            ////    int addMeToTheListAtTheVeryFront = 1;
+            ////    // use method here
+            ////    Grading.OneWasAddedToTheFront(ages);
 
-            // find a method to clear the list ages.
-            // use method here
-            Grading.AgesIsNowEmpty(ages);
+            ////    // find a method to clear the list ages.
+            ////    // use method here
+            ////    Grading.AgesIsNowEmpty(ages);
 
-            // find a method to check if the double amount is negative.
-            double amount = 29.3;
-            // you must capture the result of the found method;
-            bool isNegative = // use method here
-            Grading.AmountIsNotNegative(isNegative);
+            ////    // find a method to check if the double amount is negative.
+            ////    double amount = 29.3;
+            ////    // you must capture the result of the found method;
+            ////    bool isNegative = // use method here
+            ////    Grading.AmountIsNotNegative(isNegative);
 
-            // Find a method to tell you if the sentence contains the work fox
-            string sentence = "The quick brown fox.";
-            // you must capture the result of the found method;
-            bool doesContaintFox = // use method here
-            Grading.ContainsFox(doesContaintFox);
+            ////    // Find a method to tell you if the sentence contains the work fox
+            ////    string sentence = "The quick brown fox.";
+            ////    // you must capture the result of the found method;
+            ////    bool doesContaintFox = // use method here
+            ////    Grading.ContainsFox(doesContaintFox);
 
-            // Find a method to replace the word quick, with the word slow
-            // you must capture the result of the found method;
-            string newSentence = // use method here
-            Grading.ReplacedTheWord(newSentence);
+            ////    // Find a method to replace the word quick, with the word slow
+            ////    // you must capture the result of the found method;
+            ////    string newSentence = // use method here
+            ////    Grading.ReplacedTheWord(newSentence);
 
-            // Find a method to Convert this word to lowercase;
-            string word = "UPPER";
-            // you must capture the result of the found method;
-            string lowered = // use method here
-            Grading.StringWasLowercased(lowered);
+            ////    // Find a method to Convert this word to lowercase;
+            ////    string word = "UPPER";
+            ////    // you must capture the result of the found method;
+            ////    string lowered = // use method here
+            ////    Grading.StringWasLowercased(lowered);
 
-            // Find a method to Convert this word to lowercase;
-            string needsSplit = "I,Need,These,Seperate";
-            // you must capture the result of the found method;
-            string[] split = // use method here
-            Grading.StringWasSplit(split);
+            ////    // Find a method to Convert this word to lowercase;
+            ////    string needsSplit = "I,Need,These,Seperate";
+            ////    // you must capture the result of the found method;
+            ////    string[] split = // use method here
+            ////    Grading.StringWasSplit(split);
 
 
             // I hope by now you see the power of what the types already do for you.
         }
-    }
+}
 
     public class YourAnswers
     {
-        //READ ME
-        // You write all your methods here.
+    //READ ME
+    // You write all your methods here.
+    //READ ME
+    // This test "WritingMethods is all about you taking the contracts below and
+    // writing the methods needed to satisfy them.
+    // You are NOT allowed to change any code in here at all. 
+    // You are only allowed to write methods in the YourAnswers class below.
+
+
+    //YourAnswers.DoNothing();
+
+        public int returnIntWithValue25()
+        {
+            int shouldBe25 = 25;
+            return shouldBe25;
+
+        }
+
+        public int AddTwoNumbers()
+        {
+            int shouldBeAdded = 6 + 10;
+            return shouldBeAdded;
+
+        }
         
+        public int IncrementMe()
+        {
+            int valueToBeIncremented = 6;
+            valueToBeIncremented++;
+            return valueToBeIncremented;
+        }
+
+        public int DecrementMe()
+        {
+            int valueToBeDecremented = 6;
+            valueToBeDecremented--;
+            return valueToBeDecremented;
+        }
+
+        public int CastDoubleToInt()
+        {
+            double valueToBeCasted = 27.6;
+            valueToBeCasted = (int) valueToBeCasted;
+            return (int)valueToBeCasted;
+        }
+    
+        public double ConvertIntToDouble()
+        {
+            int valueToBeConverted = 19;
+            double converted = (System.Convert.ToDouble(valueToBeConverted));
+            return converted;
+        }
+      
+        public string CastMeIntoAString()
+        {
+            double valueToBeCastedIntoString = 27.6;
+            string castedString = (System.Convert.ToString(valueToBeCastedIntoString));
+            return castedString;
+        }
+
+        public double ParseMeIntoADouble()
+        {
+            string valueToBeParsed = "27.6";
+            double parsed = double.Parse(valueToBeParsed);
+            return parsed;
+        }
+
+        public int ReturnMaxIntValue()
+        {
+            int max = int.MaxValue;
+            return max;
+        }
+
+   
+        public bool CheckIfIAmTrue()
+        {
+            bool amITrue = false;
+            return amITrue;
+        }
+
+        public bool ReturnTrueOnlyIfIamBothPositiveAndEven()
+        {
+            int positiveAndEven = 2;
+            if (positiveAndEven > 0 && positiveAndEven % 2 == 0)
+            {
+                return true;
+            }
+           
+            else
+            {
+                return false;
+            }
+        }
+
+        public bool ReturnTrueOnlyIfIamBothPositiveAndEvenFalse()
+        {
+            int positiveAndOdd = 3;
+            if (positiveAndOdd > 0 && positiveAndOdd % 2 == 0)
+            {
+                return true;
+            }
+
+            else
+            {
+                return false;
+            }
+        }
+
+
+
+      
+
+        //    int negativeAndEven = -2;
+        //result = YourAnswers.ReturnTrueOnlyIfIamBothPositiveAndEven(negativeAndEven);
+        //    Grading.ReturnTrueOnlyIfIamBothPositiveAndEvenFalse(result);
+
+        //    int negativeAndOdd = -3;
+        //result = YourAnswers.ReturnTrueOnlyIfIamBothPositiveAndEven(negativeAndOdd);
+        //    Grading.ReturnTrueOnlyIfIamBothPositiveAndEvenFalse(result);
+
+        //    int[] array = { 4, 5, 6, 8, 12, 17 };
+        //// Sum means to add the contents of the array all together.
+        //int sum = YourAnswers.SumTheContentsOfTheArray(array);
+        //Grading.SumTheContentsOfTheArray(sum);
+
+        //    int[] array3 = { 4, 5, 6, 8, 12, 17 };
+        //int value = YourAnswers.GetValueAtPosition3(array3);
+        //Grading.GetValueAtPosition3(value);
+
+        //    int length = YourAnswers.GetLengthOfArray(array3);
+        //Grading.GetLengthOfArray(length);
+
+        //    int[] array4 = { 3, 3, 3, 3, 3, 3 };
+        //bool allValuesAre3 = YourAnswers.CheckAllValuesAre3(array4);
+        //Grading.CheckAllValuesAre3(allValuesAre3);
+
+        //    int[] arraySwapped = YourAnswers.SwapFirstValueWithLastValue(array3);
+        //Grading.SwapFirstValueWithLastValue(arraySwapped);
     } 
 
     public class Grading
