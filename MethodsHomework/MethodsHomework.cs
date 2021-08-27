@@ -20,7 +20,7 @@ namespace MethodsHomework
 
 
             //YourAnswers.DoNothing();
-.
+
             int shouldBe25 = YourAnswers.ReturnIntWithValue25();
             Grading.ReturnIntWithValue25(shouldBe25);
 
@@ -169,55 +169,55 @@ namespace MethodsHomework
         {
             Console.WriteLine("This Method does nothing");
         }
-        public int ReturnIntWithValue25()
+        public static int ReturnIntWithValue25()
         {
            
             return 25;
         }
-        public int AddTwoNumbers(int first, int second)
+        public static int AddTwoNumbers(int first, int second)
         {
             return first + second;
         }
-        public int IncrementMe(int valueToBeIncremented)
+        public static int IncrementMe(int valueToBeIncremented)
         {
             return valueToBeIncremented++;
         }
-        public int DecrementMe(int valueToBeDecremented)
+        public static int DecrementMe(int valueToBeDecremented)
         {
             return valueToBeDecremented--;
         }
-        public int CastDoubleToInt(int valueToBeCasted)
+        public static int CastDoubleToInt(double valueToBeCasted)
         {
             int casted = (int)valueToBeCasted;
             return casted;
         }
 
 
-        public double ConvertIntToDouble(int valueToBeConverted)
+        public static double ConvertIntToDouble(int valueToBeConverted)
         {
             return (double)valueToBeConverted;
         }
 
-        public string CastMeIntoAString(double valueToBeCastedIntoString)
+        public static string CastMeIntoAString(double valueToBeCastedIntoString)
         {
             return valueToBeCastedIntoString.ToString();
         }
-        public double ParseMeIntoADouble(string valueToBeParsed)
+        public static double ParseMeIntoADouble(string valueToBeParsed)
         {
             return Double.Parse(valueToBeParsed);
         }
 
-        public int ReturnMaxIntValue()
+        public  static int ReturnMaxIntValue()
         {
             return int.MaxValue;
         }
 
-        public bool CheckIfIAmTrue(bool false)
+        public static bool CheckIfIAmTrue(bool false)
         {
             return false;
         }
 
-        public bool ReturnTrueOnlyIfIamBothPositiveAndEven(int positiveAndEven)
+        public static bool ReturnTrueOnlyIfIamBothPositiveAndEven(int positiveAndEven)
         {
             if(positiveAndEven >= 0 && positiveAndEven % 2 == 0)
             {
@@ -228,7 +228,7 @@ namespace MethodsHomework
             }
         }
 
-        public int SumTheContentsOfTheArray(int[] array)
+        public static int SumTheContentsOfTheArray(int[] array)
         {
             int sum = 0;
             int i = 0;
@@ -239,18 +239,18 @@ namespace MethodsHomework
             return sum;
         }
 
-        public int GetValueAtPosition3(int[] array3)
+        public static int GetValueAtPosition3(int[] array3)
         {
             int value = array3[2];
             return value;
         }
 
-        public int GetLengthOfArray(int[] array3)
+        public static int GetLengthOfArray(int[] array3)
         {
             return array3.Length;
         }
 
-        public bool CheckAllValuesAre3(int[] array4)
+        public static bool CheckAllValuesAre3(int[] array4)
         {
             int i = 0;
             while (i < array4.Count())
@@ -265,7 +265,7 @@ namespace MethodsHomework
             }
         }
 
-        public int[] SwapFirstValueWithLastValue(int[] array3)
+        public static int[] SwapFirstValueWithLastValue(int[] array3)
         {
             int temp = array3[0];
             int lastValue = array3.Length;
