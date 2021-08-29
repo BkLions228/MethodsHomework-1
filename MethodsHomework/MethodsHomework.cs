@@ -1,6 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 using System.Linq;
+using System.Globalization;
 
 namespace MethodsHomework
 {
@@ -45,14 +46,14 @@ namespace MethodsHomework
             string castedString = YourAnswers.CastMeIntoAString(valueToBeCastedIntoString);
             Grading.CastMeIntoAString(castedString);
 
-            string valueToBeParsed= "27.6";
+            string valueToBeParsed = "27.6";
             double parsed = YourAnswers.ParseMeIntoADouble(valueToBeParsed);
             Grading.ParseMeIntoADouble(parsed);
 
-            int max = YourAnswers.ReturnMaxIntValue();
+            int max = YourAnswers.ReturnMaxIntValue(); // not sure if I did this right
             Grading.ReturnMaxIntValue(max);
 
-            bool amITrue = YourAnswers.CheckIfIAmTrue(false);
+            bool amITrue = YourAnswers.CheckIfIAmTrue(false); // not sure if I did this right
             Grading.CheckIfIAmTrue(amITrue);
 
             int positiveAndEven = 2;
@@ -71,7 +72,7 @@ namespace MethodsHomework
             result = YourAnswers.ReturnTrueOnlyIfIamBothPositiveAndEven(negativeAndOdd);
             Grading.ReturnTrueOnlyIfIamBothPositiveAndEvenFalse(result);
 
-            int[] array = { 4,5,6,8,12,17 };
+            int[] array = { 4, 5, 6, 8, 12, 17 };
             // Sum means to add the contents of the array all together.
             int sum = YourAnswers.SumTheContentsOfTheArray(array);
             Grading.SumTheContentsOfTheArray(sum);
@@ -83,7 +84,7 @@ namespace MethodsHomework
             int length = YourAnswers.GetLengthOfArray(array3);
             Grading.GetLengthOfArray(length);
 
-            int[] array4 = { 3,3,3,3,3,3 };
+            int[] array4 = { 3, 3, 3, 3, 3, 3 };
             bool allValuesAre3 = YourAnswers.CheckAllValuesAre3(array4);
             Grading.CheckAllValuesAre3(allValuesAre3);
 
@@ -107,53 +108,57 @@ namespace MethodsHomework
             // Find a method to reverse this list of ages.
             // hint, uses the dot operatore on ages. like ages.SomeMethod()
             // use method here
+            ages.Reverse();
             Grading.ListIsReversed(ages);
 
             // find a method to add a value to the list ages at the end.
             int addMeIntoList = 12;
             // use method here
+            ages.Add(addMeIntoList);
             Grading.TwelveWasAdded(ages);
 
             // find a method to add a value to the list at the front of the list ages, ie, the start of it, or first value.
             int addMeToTheListAtTheVeryFront = 1;
             // use method here
+            ages.Insert(0, addMeToTheListAtTheVeryFront);
             Grading.OneWasAddedToTheFront(ages);
 
             // find a method to clear the list ages.
             // use method here
+            ages.Clear();
             Grading.AgesIsNowEmpty(ages);
 
             // find a method to check if the double amount is negative.
             double amount = 29.3;
             // you must capture the result of the found method;
-            bool isNegative = // use method here
+            bool isNegative = amount < 0; // use method here // not sure if this is right. I couldn't find a method except Single.IsNegative()
             Grading.AmountIsNotNegative(isNegative);
 
             // Find a method to tell you if the sentence contains the work fox
             string sentence = "The quick brown fox.";
             // you must capture the result of the found method;
-            bool doesContaintFox = // use method here
+            bool doesContaintFox = sentence.Contains("fox");// use method here
             Grading.ContainsFox(doesContaintFox);
 
             // Find a method to replace the word quick, with the word slow
             // you must capture the result of the found method;
-            string newSentence = // use method here
+            string newSentence = sentence.Replace("quick", "slow");// use method here
             Grading.ReplacedTheWord(newSentence);
 
             // Find a method to Convert this word to lowercase;
             string word = "UPPER";
             // you must capture the result of the found method;
-            string lowered = // use method here
+            string lowered = word.ToLower();// use method here
             Grading.StringWasLowercased(lowered);
 
             // Find a method to Convert this word to lowercase;
             string needsSplit = "I,Need,These,Seperate";
             // you must capture the result of the found method;
-            string[] split = // use method here
+            string[] split = needsSplit.Split(",");// use method here
             Grading.StringWasSplit(split);
 
 
-            // I hope by now you see the power of what the types already do for you.
+            // I hope by now you see the power of what the types already do for you. -- Yes starting to
         }
     }
 
@@ -161,7 +166,138 @@ namespace MethodsHomework
     {
         //READ ME
         // You write all your methods here.
-        
+        public static void DoNothing() { }
+
+        public static int ReturnIntWithValue25()
+        {
+            return 25;
+        }
+
+        public static int AddTwoNumbers(int num1, int num2) 
+        {
+            int result = num1 + num2;
+            return result;
+        }
+
+        public static int IncrementMe(int num1)
+        {
+            return ++num1;
+        }
+
+        public static int DecrementMe(int num1)
+        {
+            return --num1;
+        }
+
+        public static int CastDoubleToInt(double num1)
+        {
+            return (int)num1;
+        }
+
+        public static double ConvertIntToDouble(int num1)
+        {
+            return (double)num1;
+        }
+
+        public static string CastMeIntoAString(double num1)
+        {
+            return num1.ToString();
+        }
+
+        public static double ParseMeIntoADouble(string num1)
+        {
+            return double.Parse(num1);
+        }
+
+        public static int ReturnMaxIntValue()
+        {
+            return int.MaxValue;
+        }
+
+        public static bool CheckIfIAmTrue(bool boolean) // how do I use xor here?
+        {
+            if (boolean == false)
+            {
+                return false;
+            } else
+            {
+                return true;
+            }
+        }
+
+        public static bool ReturnTrueOnlyIfIamBothPositiveAndEven(int num1)
+        {
+            if (num1 > 0 && num1 % 2 == 0)
+            {
+                return true;
+            }
+            else if (num1 > 0 && num1 % 2 != 0)
+            {
+                return false;
+            }
+            else if (num1 < 0 && num1 % 2 == 0)
+            {
+                return false;
+            }
+            else if (num1 < 0 && num1 % 2 != 0)
+            {
+                return false;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public static int SumTheContentsOfTheArray(int[] numsArray)
+        {
+            return numsArray.Sum();
+        }
+
+        public static int GetValueAtPosition3(int[] numsArray)
+        {
+            return numsArray.ElementAt(2);
+        }
+
+        public static int GetLengthOfArray(int[] numsArray)
+        {
+            return numsArray.Length;
+        }
+
+        public static bool CheckAllValuesAre3(int[] numsArray)
+        {
+            //for (int i = 0; i < numsArray.Length; i++)
+            //{
+            //    if (numsArray[i] == 3)
+            //    {
+            //        return true;
+            //    }
+            //    else
+            //    {
+            //        return false;
+            //    }
+            //}
+
+            bool result = true;
+            foreach (int num in numsArray)
+            {
+                if (num != 3)
+                {
+                    result = false;
+                    return result;
+                }
+            }
+            return result;
+        }
+
+        public static int[] SwapFirstValueWithLastValue(int[] array3)
+        {
+            int first = array3[0];
+            int last = array3[array3.Length - 1];
+            array3[0] = last;
+            array3[array3.Length -1] = first;
+            return array3;
+        }
     } 
 
     public class Grading
