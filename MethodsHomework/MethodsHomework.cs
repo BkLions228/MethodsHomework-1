@@ -1,4 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -107,49 +108,55 @@ namespace MethodsHomework
             // Find a method to reverse this list of ages.
             // hint, uses the dot operatore on ages. like ages.SomeMethod()
             // use method here
+            ages.Reverse();
             Grading.ListIsReversed(ages);
 
             // find a method to add a value to the list ages at the end.
             int addMeIntoList = 12;
+            ages.Add(addMeIntoList);
+
             // use method here
             Grading.TwelveWasAdded(ages);
 
             // find a method to add a value to the list at the front of the list ages, ie, the start of it, or first value.
             int addMeToTheListAtTheVeryFront = 1;
             // use method here
+            ages.Insert(0, addMeToTheListAtTheVeryFront);
             Grading.OneWasAddedToTheFront(ages);
 
             // find a method to clear the list ages.
             // use method here
+            ages.Clear();
             Grading.AgesIsNowEmpty(ages);
 
             // find a method to check if the double amount is negative.
             double amount = 29.3;
+
             // you must capture the result of the found method;
-            bool isNegative = // use method here
+            bool isNegative = Double.IsNegative(amount);
             Grading.AmountIsNotNegative(isNegative);
 
             // Find a method to tell you if the sentence contains the work fox
             string sentence = "The quick brown fox.";
             // you must capture the result of the found method;
-            bool doesContaintFox = // use method here
+            bool doesContaintFox = sentence.Contains("fox");
             Grading.ContainsFox(doesContaintFox);
 
             // Find a method to replace the word quick, with the word slow
             // you must capture the result of the found method;
-            string newSentence = // use method here
+            string newSentence = sentence.Replace("quick", "slow");
             Grading.ReplacedTheWord(newSentence);
 
             // Find a method to Convert this word to lowercase;
             string word = "UPPER";
             // you must capture the result of the found method;
-            string lowered = // use method here
+            string lowered = word.ToLower();
             Grading.StringWasLowercased(lowered);
 
             // Find a method to Convert this word to lowercase;
             string needsSplit = "I,Need,These,Seperate";
             // you must capture the result of the found method;
-            string[] split = // use method here
+            string[] split = needsSplit.Split(',');
             Grading.StringWasSplit(split);
 
 
@@ -159,10 +166,116 @@ namespace MethodsHomework
 
     public class YourAnswers
     {
-        //READ ME
-        // You write all your methods here.
-        
-    } 
+        internal static int AddTwoNumbers(int v1, int v2)
+        {
+            return v1+v2;
+        }
+
+        internal static int CastDoubleToInt(double valueToBeCasted)
+        {
+            return (int) valueToBeCasted;
+        }
+
+        internal static string CastMeIntoAString(double valueToBeCastedIntoString)
+        {
+            return valueToBeCastedIntoString.ToString();
+        }
+
+        internal static bool CheckAllValuesAre3(int[] array4)
+        {
+            for (int i = 0; i < array4.Length; i++)
+            {
+                if (array4[i] != 3) return false;
+            };
+            return true;
+        }
+
+        internal static bool CheckIfIAmTrue(bool v)
+        {
+            return v;
+        }
+
+        internal static double ConvertIntToDouble(int valueToBeConverted)
+        {
+            return (double)valueToBeConverted;
+        }
+
+        internal static int DecrementMe(int valueToBeDecremented)
+        {
+            valueToBeDecremented--;
+            return valueToBeDecremented;
+        }
+
+        internal static void DoNothing()
+        {
+
+        }
+
+        internal static int GetLengthOfArray(int[] array3)
+        {
+            return array3.Length;
+        }
+
+        internal static int GetValueAtPosition3(int[] array3)
+        {
+            return array3[2];
+        }
+
+        internal static int IncrementMe(int valueToBeIncremented)
+        {
+            valueToBeIncremented++;
+            return valueToBeIncremented;
+        }
+
+        internal static double ParseMeIntoADouble(string valueToBeParsed)
+        {
+            return double.Parse(valueToBeParsed);
+        }
+
+        internal static int ReturnIntWithValue25()
+        {
+            return 25;
+        }
+
+        internal static int ReturnMaxIntValue()
+        {
+            return int.MaxValue;
+        }
+
+        internal static bool ReturnTrueOnlyIfIamBothPositiveAndEven(int positiveAndEven)
+        {
+            switch (positiveAndEven>0)
+            {
+                case true:
+                    switch (positiveAndEven % 2)
+                    {
+                        case 0:
+                            return true;
+                        default:
+                            return false;
+                    }
+                case false:
+                    return false;
+
+            }
+        }
+
+        internal static int SumTheContentsOfTheArray(int[] array)
+        {
+            int numToReturn = 0;
+            foreach (int i in array)
+            {
+                numToReturn += i;
+            }
+            return numToReturn;
+        }
+
+        internal static int[] SwapFirstValueWithLastValue(int[] array3)
+        {
+            (array3[0], array3[array3.Length - 1]) = (array3[array3.Length - 1], array3[0]);
+            return array3;
+        }
+    }
 
     public class Grading
     {
