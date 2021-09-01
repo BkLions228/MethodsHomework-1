@@ -236,7 +236,7 @@ namespace MethodsHomework
             return int.MaxValue;
         }
 
-
+//test
         static public bool CheckIfIAmTrue(bool toBeChecked)
         {
                 if (toBeChecked == true)
